@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsen Stebelskyy - QA Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px; /* Increased font size for better readability */
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Light background color */
+        }
+        header {
+            background-color: #333; /* Dark header */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px; /* Larger size for name */
+            margin: 0;
+        }
+        h2 {
+            font-size: 28px; /* Larger size for section titles */
+        }
+        h3 {
+            font-size: 24px; /* Larger size for sub-titles */
+        }
+        p, ul {
+            font-size: 18px; /* Increased size for paragraphs and lists */
+        }
+        .section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white; /* White background for content sections */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333; /* Dark footer */
+            color: white;
+        }
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 400px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* Additional styles */
+        .expandable-content {
+            margin: 10px 0; /* Space above and below text */
+        }
+        /* Override default bullet style for p elements that appear as list items */
+        p {
+            list-style-type: none; /* Remove bullets for paragraphs */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove padding */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Arsen Stebelskyy</h1>
+        <p>QA Engineer</p>
+    </header>
+
+    <section id="about" class="section expandable">
+        <h2>About Me</h2>
+        <p class="expandable-content">
+            I am a passionate QA Engineer dedicated to ensuring software quality and enhancing user experiences. My expertise encompasses both manual and automated testing, and I thrive in collaborative environments where innovation flourishes.
+        </p>
+    </section>
+    
+    <section id="skills" class="section expandable">
+        <h2>Skills</h2>
+        <p class="expandable-content">
+            I am proficient in various testing frameworks and methodologies, including: 
+        </p>
+        <ul>
+            <li>Automated Testing (Selenium, Cypress)</li>
+            <li>Manual Testing</li>
+            <li>API Testing (Postman, Swagger)</li>
+            <li>Agile, Waterfall Methodologies</li>
+            <li>Bug Tracking (JIRA)</li>
+            <li>Basic SQL (Adminer, MySQL)</li>
+        </ul>
+    </section>
+    
+    <section id="experience" class="section expandable">
+        <h2>Experience</h2>
+        
+        <h3>QA Engineer - Delek Homes</h3>
+        <p>Jan 2023 - June 2023</p>
+        <ul class="expandable-content">
+            <li><strong>Testing Types:</strong>
+                <ul>
+                    <li>Functional Testing</li>
+                    <li>Non-Functional Testing</li>
+                    <li>Integration Testing</li>
+                    <li>End-to-End Testing</li>
+                    <li>System Testing</li>
+                </ul>
+            </li>
+            <li><strong>Tools Used:</strong>
+                <ul>
+                    <li>JIRA for bug reporting and documentation</li>
+                    <li>Swagger & Postman for API testing</li>
+                    <li>TestRail & Qase.io for test management</li>
+                </ul>
+            </li>
+            <li><strong>Collaboration:</strong>
+                <ul>
+                    <li>Effectively communicated with development teams to resolve issues and enhance product quality</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>QA Engineer - Playball</h3>
+        <p>July 2023 - Present</p>
+        <ul class="expandable-content">
+            <li>Conducted testing for both iOS and Android applications using:
+                <ul>
+                    <li>Android Studio for Android testing</li>
+                    <li>TestFlight for iOS testing</li>
+                </ul>
+            </li>
+            <li>Automated testing processes using Cypress, reducing testing time by 38% and improving overall efficiency</li>
+            <li>Developed a basic understanding of HTML, CSS, and JavaScript for more effective testing and collaboration with developers</li>
+            <li>Collaborated closely with cross-functional teams to ensure timely resolution of identified issues</li>
+        </ul>
+    </section>    
+
+    <section id="contact" class="section">
+        <h2>Contact me</h2>
+        <p>Email: <a href="#" id="emailBtn">arssteb@icloud.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Arsen Stebelskyy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

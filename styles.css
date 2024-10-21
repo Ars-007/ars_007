@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light grey background for content */
+}
+
+.header {
+    flex: 0 0 200px; /* Fixed width for profile area */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Space between profile pic and content */
+}
+
+header {
+    background: url('carbon-fiber-texture.jpg') no-repeat center center; /* Background texture */
+    background-size: cover; /* Cover the entire header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px auto;
+    background: white; /* White background for content sections */
+    border-radius: 5px;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for scaling */
+}
+
+.section:hover {
+    transform: scale(1.1); /* Enlarge the section on hover */
+}
+
+h2 {
+    color: #2e2e2e; /* Dark grey for section titles */
+}
+
+footer {
+    background: url('carbon-fiber-texture.jpg') no-repeat center center; /* Background texture */
+    background-size: cover; /* Cover the entire footer */
+    text-align: center;
+    padding: 10px;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.profile-pic {
+    width: 250px; /* Increased size */
+    height: 350px; /* Adjusted height */
+    border-radius: 15px; /* Smooth edges */
+    margin-bottom: 10px; /* Space below picture */
+    cursor: pointer; /* Indicate that it's clickable */
+    transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    display: flex; /* Use flexbox to center */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: auto; /* Allow the image to take its original size */
+    height: auto; /* Allow the image to take its original size */
+    max-width: 90%; /* Limit max size to prevent overflow */
+    max-height: 90%; /* Limit max height */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* For the header paragraph */
+header p {
+    font-size: 22px; /* Larger size for header paragraph */
+    font-weight: bold; /* Optional: make it bold */
+    margin: 10px 0; /* Space around the paragraph */
+}
+
+/* General text size in sections */
+.section p {
+    font-size: 16px; /* Set paragraph text size to 16px for better readability */
+}
+
+/* Optional: Adjust headings for consistency */
+.section h2 {
+    font-size: 22px; /* Size for section titles */
+    margin-bottom: 10px; /* Space below titles */
+}
+
+.section h3 {
+    font-size: 20px; /* Size for sub-titles */
+    margin-bottom: 5px; /* Space below sub-titles */
+}
+/* General text size in sections */
+.section p, 
+.section li {
+    font-size: 16px; /* Set paragraph text size to 16px for consistency */
+    line-height: 1.6; /* Adjust line height for readability */
+    color: #333; /* Optional: match text color */
+}
+
+/* Optional: Adjust headings for consistency */
+.section h2 {
+    font-size: 22px; /* Size for section titles */
+    margin-bottom: 10px; /* Space below titles */
+}
+
+.section h3 {
+    font-size: 20px; /* Size for sub-titles */
+    margin-bottom: 5px; /* Space below sub-titles */
+}
+
